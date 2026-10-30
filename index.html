@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Mittal — AI & Software Development</title>
+    <meta name="description"
+        content="Portfolio of Aarav Mittal: 2nd-year CS student at MIT Bangalore (9.81 CGPA) & former GenAI Intern at Zensar Technologies building RAG pipelines, MCP servers, and software systems.">
+    <link rel="stylesheet" href="styles.css?v=32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Minimalist Masthead -->
+    <header class="masthead">
+        <div class="container masthead-inner">
+            <div class="masthead-brand">
+                <a href="index.html" class="brand-name">Aarav Mittal</a>
+                <span class="brand-badge">CS @ MIT BANGALORE</span>
+            </div>
+
+            <nav class="masthead-nav">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#toolkit" class="nav-link">Toolkit</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="gaming.html" class="track-switcher">
+                    <i class="fa-solid fa-gamepad"></i> Game Dev Portfolio &rarr;
+                </a>
+
+                <button class="theme-toggle-btn" id="themeToggle" title="Toggle dark/light theme"
+                    aria-label="Toggle theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             PILOT SCREEN (<60-SEC RECRUITER HOOK)
+             ========================================================================== -->
+        <section class="pilot-section">
+            <div class="container">
+                <div class="pilot-header-tag">
+                    <span class="status-dot"></span>
+                    <span>Available for AI/ML & Software Engineering Internships</span>
+                </div>
+
+                <h1 class="pilot-headline">
+                    Second-year CS student building <em>practical AI agent pipelines</em>, RAG systems, and developer
+                    tools.
+                </h1>
+
+                <p class="pilot-body">
+                    I'm Aarav Mittal, an undergraduate at <strong>Manipal Institute of Technology, Bangalore</strong>
+                    (1st Year CGPA: <strong>9.81</strong>) and former <strong>GenAI Intern at Zensar
+                        Technologies</strong>. I believe in understanding software from first principles—by writing real
+                    code, testing edge cases, and building useful tools rather than relying on abstract buzzwords.
+                </p>
+
+                <!-- High-Density Pilot Snapshot -->
+                <div class="pilot-metrics">
+                    <div class="metric-item">
+                        <span class="metric-label">01 / Industry Experience</span>
+                        <span class="metric-value">GenAI Intern @ Zensar</span>
+                        <span class="metric-detail">2-month sprint on RAG & MCP tool servers</span>
+                    </div>
+
+                    <div class="metric-item">
+                        <span class="metric-label">02 / Academic Standing</span>
+                        <span class="metric-value">9.81 CGPA (1st Year)</span>
+                        <span class="metric-detail">B.Tech Computer Science & Engineering</span>
+                    </div>
+
+                    <div class="metric-item">
+                        <span class="metric-label">03 / Technical Focus</span>
+                        <span class="metric-value">Python, RAG & MCP Tools</span>
+                        <span class="metric-detail">LangChain / LangGraph, APIs & Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             FEATURED PROJECTS (THE CENTERPIECE)
+             ========================================================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Selected Projects</h2>
+                        <p class="section-subtext">
+                            Real systems built during my industry internship, competitive hackathons, and independent
+                            technical explorations.
+                        </p>
+                    </div>
+                    <span class="section-index">[01 &mdash; 03]</span>
+                </div>
+
+                <div class="projects-stack">
+                    <!-- Project 1: PDF Document Intelligence RAG Agent -->
+                    <article class="project-entry">
+                        <div class="project-content">
+                            <div>
+                                <div class="project-meta-row">
+                                    <span class="project-tag">GenAI &bull; Zensar Internship</span>
+                                    <span class="project-status">Completed Prototype</span>
+                                </div>
+
+                                <h3 class="project-heading">Multi-Feature PDF Document Intelligence RAG Agent</h3>
+
+                                <p class="project-desc">
+                                    Standard search over long, dense technical documents fails to understand
+                                    semantic relationships and context. Built during my internship at Zensar
+                                    Technologies, this system accepts arbitrary PDF uploads and runs an end-to-end
+                                    Retrieval-Augmented Generation pipeline.
+                                </p>
+
+                                <div class="project-spec-list">
+                                    <div class="spec-item">
+                                        <strong>Key Capabilities:</strong> Contextual Q&A with citation attribution,
+                                        automated executive summaries, high-yield study notes, and topic-focused
+                                        practice quiz generation.
+                                    </div>
+                                    <div class="spec-item">
+                                        <strong>Technical Architecture:</strong> PyPDF text ingestion, recursive
+                                        semantic chunking, ChromaDB dense vector indexing, and FastMCP tool routing to
+                                        eliminate LLM hallucination.
+                                    </div>
+                                    <div class="spec-item">
+                                        <strong>Key Learning:</strong> Designing robust chunk-overlap strategies to
+                                        prevent context severance across page boundaries.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-row">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">RAG Pipeline</span>
+                                    <span class="tech-badge">FastMCP</span>
+                                    <span class="tech-badge">ChromaDB</span>
+                                    <span class="tech-badge">Vector Embeddings</span>
+                                    <span class="tech-badge">PyPDF</span>
+                                    <span class="tech-badge">FastAPI</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://mathandpdfreader.streamlit.app" target="_blank" rel="noopener noreferrer" class="link-button">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live App &rarr;
+                                    </a>
+                                    <a href="https://github.com/Aarav-Mittal/AIAgent-PDF-Reader" target="_blank" rel="noopener noreferrer" class="link-button secondary">
+                                        <i class="fa-brands fa-github"></i> View Repository &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Parity — AI Money Tracker & Run-Out Forecast -->
+                    <article class="project-entry">
+                        <div class="project-content">
+                            <div>
+                                <div class="project-meta-row">
+                                    <span class="project-tag">Full-Stack AI &bull; Web Application</span>
+                                    <span class="project-status">Completed Project</span>
+                                </div>
+
+                                <h3 class="project-heading">Parity &mdash; AI Money Tracker & Run-Out Forecast</h3>
+
+                                <p class="project-desc">
+                                    College students and young adults living on fixed stipends often face
+                                    end-of-month financial panic. Traditional personal finance apps prioritize
+                                    net-worth tracking and stock feeds; Parity solves the daily survival question:
+                                    <em>"Will my money last until my next allowance, and what can I safely spend today?"</em>
+                                </p>
+
+                                <div class="project-spec-list">
+                                    <div class="spec-item">
+                                        <strong>Deterministic Forecasting Engine:</strong> 100% pure TypeScript
+                                        arithmetic based on minor currency units (paise: <code>Math.round(rupees * 100)</code>) to completely eliminate
+                                        floating-point rounding bugs—zero LLM hallucination of financial math. Verified by 96 Vitest unit tests.
+                                    </div>
+                                    <div class="spec-item">
+                                        <strong>Conversational AI Expense Logger:</strong> Parses unstructured
+                                        inputs in everyday student vernacular (e.g. <em>"spent 120 on auto"</em>,
+                                        <em>"chai 30"</em>) backed by Groq Cloud (<code>qwen/qwen3.8-27b</code>) and
+                                        Google Gemini with an offline regex fallback.
+                                    </div>
+                                    <div class="spec-item">
+                                        <strong>What-If Purchase Simulator & Obligations:</strong> Automatically
+                                        isolates committed upcoming bills (hostel rent, Wi-Fi, recharge) and tests
+                                        irregular purchase affordability before money is spent.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-row">
+                                    <span class="tech-badge">Next.js 16</span>
+                                    <span class="tech-badge">React 19</span>
+                                    <span class="tech-badge">TypeScript</span>
+                                    <span class="tech-badge">Tailwind CSS</span>
+                                    <span class="tech-badge">Supabase RLS</span>
+                                    <span class="tech-badge">Groq Cloud</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://paritymoney.vercel.app" target="_blank" rel="noopener noreferrer" class="link-button">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live App &rarr;
+                                    </a>
+                                    <a href="https://github.com/Aarav-Mittal/Parity" target="_blank" rel="noopener noreferrer" class="link-button secondary">
+                                        <i class="fa-brands fa-github"></i> View Repository &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Real-Time VIP Face Recognition AI -->
+                    <article class="project-entry">
+                        <div class="project-content">
+                            <div>
+                                <div class="project-meta-row">
+                                    <span class="project-tag">Computer Vision &bull; Workshop</span>
+                                    <span class="project-status">Completed System</span>
+                                </div>
+
+                                <h3 class="project-heading">Real-Time VIP Campus Face Recognition & Guidance System</h3>
+
+                                <p class="project-desc">
+                                    Engineered during an ATL innovation sprint to automate identification and
+                                    personalized guidance for guests visiting college tech summits.
+                                </p>
+
+                                <div class="project-spec-list">
+                                    <div class="spec-item">
+                                        <strong>Pipeline:</strong> OpenCV live video stream capture, facial landmark
+                                        detection, embedding vector extraction, and nearest-neighbor classification
+                                        using Scikit-Learn.
+                                    </div>
+                                    <div class="spec-item">
+                                        <strong>Outcome:</strong> Real-time greeting alerts with sub-100ms inference
+                                        time on standard hardware, accompanied by automated campus zone guidance.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-row">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenCV</span>
+                                    <span class="tech-badge">Scikit-Learn</span>
+                                    <span class="tech-badge">Face Embeddings</span>
+                                </div>
+
+                                <div class="project-links">
+                                    <a href="https://github.com/Aarav-Mittal/Face-Identifier" target="_blank" rel="noopener noreferrer" class="link-button">
+                                        <i class="fa-brands fa-github"></i> View Repository &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             TECHNICAL TOOLKIT (NO PROGRESS BARS, MEANINGFUL GROUPS)
+             ========================================================================== -->
+        <section class="section" id="toolkit">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Technical Toolkit</h2>
+                        <p class="section-subtext">
+                            Technologies and tools I work with daily, grouped by engineering context.
+                        </p>
+                    </div>
+                    <span class="section-index">[02]</span>
+                </div>
+
+                <div class="skills-editorial-grid">
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">01 / Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python (Primary language)</li>
+                            <li>TypeScript & JavaScript</li>
+                            <li>C++ (Object-oriented)</li>
+                            <li>C (Low-level systems)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">02 / Full-Stack & AI</h3>
+                        <ul class="skill-list">
+                            <li>Next.js 16 (App Router)</li>
+                            <li>React 19 & Tailwind CSS</li>
+                            <li>Supabase (PostgreSQL & RLS)</li>
+                            <li>RAG Pipelines & ChromaDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">03 / Systems & Tools</h3>
+                        <ul class="skill-list">
+                            <li>FastAPI & REST APIs</li>
+                            <li>LangChain & LangGraph</li>
+                            <li>FastMCP & MCP Architecture</li>
+                            <li>Git & GitHub Workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">04 / Vision & Math</h3>
+                        <ul class="skill-list">
+                            <li>OpenCV (Computer Vision)</li>
+                            <li>Scikit-Learn</li>
+                            <li>Deterministic Minor Unit Math</li>
+                            <li>Linear Algebra & Calculus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE & ACADEMIC RECORD
+             ========================================================================== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Experience & Education</h2>
+                        <p class="section-subtext">
+                            Industry internship experience and formal engineering training.
+                        </p>
+                    </div>
+                    <span class="section-index">[03]</span>
+                </div>
+
+                <div class="timeline-list">
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2026 &bull; 2 Months</span>
+                        <div>
+                            <h3 class="timeline-role">GenAI & Agentic Systems Intern</h3>
+                            <div class="timeline-org">Zensar Technologies &bull; Summer Sprint</div>
+                            <p class="timeline-desc">
+                                Researched and implemented Agentic AI patterns, Model Context Protocol (MCP) server
+                                architectures, and RAG document intelligence pipelines. Authored production-ready Python
+                                tools for automated document Q&A, study synthesis, and deterministic mathematical RPC
+                                tool calling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2025 &mdash; 2029</span>
+                        <div>
+                            <h3 class="timeline-role">B.Tech in Computer Science & Engineering</h3>
+                            <div class="timeline-org">Manipal Institute of Technology (MIT), Bangalore</div>
+                            <p class="timeline-desc">
+                                <strong>1st Year CGPA: 9.81</strong>. Coursework includes Problem Solving Using
+                                Computers (C, C++, Java), Computational Mathematics, Digital Logic, and Data
+                                Visualization. Active member of technical and gaming societies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2026 &bull; Hackathon</span>
+                        <div>
+                            <h3 class="timeline-role">5th Place Winner &mdash; TechSolstice Game Jam</h3>
+                            <div class="timeline-org">MIT Bangalore Flagship Fest &bull; 24-hr Game Jam</div>
+                            <p class="timeline-desc">
+                                Architected and built the 2D physics puzzle game "God's Hand" under strict 24-hour
+                                constraints adhering to the "One Screen" theme. Developed custom game loop, collision
+                                detection, and level management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CONTACT & COLOPHON (STRICTLY AT THE END)
+             ========================================================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <h2 class="contact-headline">
+                    Let's discuss <em>opportunities & projects</em>.
+                </h2>
+                <p class="contact-copy">
+                    I am actively seeking internship opportunities in AI/ML and software engineering where I can
+                    contribute to real systems, solve challenging technical problems, and grow as an engineer. Feel free
+                    to reach out directly:
+                </p>
+
+                <div class="contact-actions-row">
+                    <button class="btn-primary-action" onclick="copyEmail()">
+                        <i class="fa-regular fa-copy"></i> Copy Email: zoom2aarav@gmail.com
+                    </button>
+                    <a href="https://www.linkedin.com/in/aarav-mittal2007" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary-action">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Aarav-Mittal" target="_blank" rel="noopener noreferrer"
+                        class="btn-secondary-action">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <div class="colophon-footer">
+                    <span>&copy; 2026 Aarav Mittal &bull; MIT Bangalore</span>
+                    <span>Designed with restraint &bull; Built with Python, HTML & CSS</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js?v=32"></script>
+</body>
+
+</html>

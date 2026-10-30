@@ -1,0 +1,15 @@
+{
+  "name": "aarav-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website of Aarav Mittal",
+  "main": "index.html",
+  "scripts": {
+    "start": "python server.py",
+    "dev": "python server.py",
+    "server": "python server.py",
+    "serve": "python -m http.server 3000"
+  },
+  "keywords": [],
+  "author": "Aarav Mittal",
+  "license": "ISC"
+}

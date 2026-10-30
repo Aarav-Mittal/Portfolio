@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Mittal — Game Development & Graphics</title>
+    <meta name="description" content="Game development portfolio of Aarav Mittal: 2nd-year CS student at MIT Bangalore (9.81 CGPA) specializing in Unreal Engine 5, PyGame 2D engines, and 5th Place Winner at TechSolstice Game Jam.">
+    <link rel="stylesheet" href="styles.css?v=32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Minimalist Masthead -->
+    <header class="masthead">
+        <div class="container masthead-inner">
+            <div class="masthead-brand">
+                <a href="index.html" class="brand-name">Aarav Mittal</a>
+                <span class="brand-badge">GAME DEV & GRAPHICS</span>
+            </div>
+            
+            <nav class="masthead-nav">
+                <a href="#projects" class="nav-link">Games</a>
+                <a href="#toolkit" class="nav-link">Toolkit</a>
+                <a href="#experience" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                <a href="index.html" class="track-switcher">
+                    <i class="fa-solid fa-robot"></i> AI & Software Portfolio &rarr;
+                </a>
+
+                <button class="theme-toggle-btn" id="themeToggle" title="Toggle dark/light theme" aria-label="Toggle theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================================
+             PILOT SCREEN (<60-SEC RECRUITER HOOK)
+             ========================================================================== -->
+        <section class="pilot-section">
+            <div class="container">
+                <div class="pilot-header-tag">
+                    <span class="status-dot"></span>
+                    <span>Available for Gameplay & Graphics Engineering Roles</span>
+                </div>
+
+                <h1 class="pilot-headline">
+                    Undergraduate developer crafting <em>3D mechanics in Unreal Engine 5</em>, custom PyGame 2D engines, and game physics.
+                </h1>
+
+                <p class="pilot-body">
+                    I'm Aarav Mittal, a Computer Science student at <strong>Manipal Institute of Technology, Bangalore</strong> (1st Year CGPA: <strong>9.81</strong>). I love building games from first principles—crafting 3D exploration and platforming systems in Unreal Engine 5, coding sprite kinematics and jump gravity curves in pure Python, and shipping games in high-pressure hackathons.
+                </p>
+
+                <!-- High-Density Pilot Snapshot -->
+                <div class="pilot-metrics">
+                    <div class="metric-item">
+                        <span class="metric-label">01 / Competitive Jam</span>
+                        <span class="metric-value">5th Rank &bull; TechSolstice</span>
+                        <span class="metric-detail">24-hr game jam sprint</span>
+                    </div>
+
+                    <div class="metric-item">
+                        <span class="metric-label">02 / 3D Engine Architecture</span>
+                        <span class="metric-value">Unreal Engine 5</span>
+                        <span class="metric-detail">"Desert Hunt" 3D exploration capstone</span>
+                    </div>
+
+                    <div class="metric-item">
+                        <span class="metric-label">03 / Mechanics & Physics</span>
+                        <span class="metric-value">2D & 3D Game Systems</span>
+                        <span class="metric-detail">State machines, collision logic & game loops</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             FEATURED GAME PROJECTS (THE CENTERPIECE)
+             ========================================================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Featured Game Projects</h2>
+                        <p class="section-subtext">
+                            From 3D engine capstone development to high-speed 24-hour hackathon winning games.
+                        </p>
+                    </div>
+                    <span class="section-index">[01 &mdash; 02]</span>
+                </div>
+
+                <div class="projects-stack">
+                    <!-- Project 1: Desert Hunt (Unreal Engine 5) -->
+                    <article class="project-entry">
+                        <div class="project-grid">
+                            <div class="project-content">
+                                <div>
+                                    <div class="project-meta-row">
+                                        <span class="project-tag">Unreal Engine 5 &bull; 3D Capstone</span>
+                                        <span class="project-status">Completed Project</span>
+                                    </div>
+
+                                    <h3 class="project-heading">"Desert Hunt" &mdash; 3D Unreal Engine 5 Capstone</h3>
+
+                                    <p class="project-desc">
+                                        A complete 3D exploration and platforming game engineered in Unreal Engine 5. Combines responsive player platforming mechanics with high-fidelity environment lighting and interactive gameplay loops.
+                                    </p>
+
+                                    <div class="project-spec-list">
+                                        <div class="spec-item">
+                                            <strong>Gameplay & Mechanics:</strong> Fluid character platforming, jump impulse curves, camera collision dampening, and collectible item state management built with Unreal Engine Blueprints.
+                                        </div>
+                                        <div class="spec-item">
+                                            <strong>Visuals & Environment:</strong> Lumen dynamic lighting, custom Niagara particle feedback for item collection, and 3D level geometry optimization.
+                                        </div>
+                                        <div class="spec-item">
+                                            <strong>Key Learning:</strong> Designing immersive level flow, physics collisions, and responsive input feel in 3D space.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="tech-row">
+                                        <span class="tech-badge">Unreal Engine 5</span>
+                                        <span class="tech-badge">Blueprints</span>
+                                        <span class="tech-badge">3D Physics</span>
+                                        <span class="tech-badge">Lumen Lighting</span>
+                                        <span class="tech-badge">Level Design</span>
+                                    </div>
+
+                                    <div class="project-links">
+                                        <button class="link-button" onclick="openGameShowcase('desert_hunt')">
+                                            <i class="fa-solid fa-play"></i> View Gameplay Demo &rarr;
+                                        </button>
+                                        <a href="https://github.com/Aarav-Mittal/Desert-Hunt.git" target="_blank" rel="noopener noreferrer" class="link-button secondary">
+                                            <i class="fa-brands fa-github"></i> View Repository &rarr;
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-visual">
+                                <img src="assets/desert_hunt_game.jpg" alt="Desert Hunt 3D Game Showcase" class="project-screenshot" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: God's Hand (24-hr Game Jam) -->
+                    <article class="project-entry">
+                        <div class="project-grid reverse">
+                            <div class="project-visual">
+                                <img src="assets/gods_hand_game.jpg" alt="God's Hand 24hr Game Jam" class="project-screenshot" loading="lazy">
+                            </div>
+
+                            <div class="project-content">
+                                <div>
+                                    <div class="project-meta-row">
+                                        <span class="project-tag">Hackathon &bull; 5th Place Winner</span>
+                                        <span class="project-status">24-hr Hackathon</span>
+                                    </div>
+
+                                    <h3 class="project-heading">"God's Hand" &mdash; 24hr TechSolstice Game Jam</h3>
+
+                                    <p class="project-desc">
+                                        Engineered during a high-intensity 24-hour sprint at MIT Bangalore's flagship TechSolstice festival. The challenge required delivering an original game adhering to the constraint "One Screen".
+                                    </p>
+
+                                    <div class="project-spec-list">
+                                        <div class="spec-item">
+                                            <strong>Game Concept:</strong> A strategic single-screen management and physics puzzle game where players manipulate environmental variables to protect fragile entities.
+                                        </div>
+                                        <div class="spec-item">
+                                            <strong>Result:</strong> Placed 5th overall in the university game jam for innovation, mechanics tightness, and bug-free submission.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="tech-row">
+                                        <span class="tech-badge">PyGame</span>
+                                        <span class="tech-badge">2D Physics</span>
+                                        <span class="tech-badge">Rapid Prototyping</span>
+                                        <span class="tech-badge">Game Design</span>
+                                    </div>
+
+                                    <div class="project-links">
+                                        <button class="link-button" onclick="openGameShowcase('gods_hand')">
+                                            <i class="fa-solid fa-play"></i> View Gameplay Demo &rarr;
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             TECHNICAL TOOLKIT (NO PROGRESS BARS, MEANINGFUL GROUPS)
+             ========================================================================== -->
+        <section class="section" id="toolkit">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Game Development Toolkit</h2>
+                        <p class="section-subtext">
+                            Tools and frameworks I use for engine programming, mechanics, and asset pipelines.
+                        </p>
+                    </div>
+                    <span class="section-index">[02]</span>
+                </div>
+
+                <div class="skills-editorial-grid">
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">01 / Game Engines</h3>
+                        <ul class="skill-list">
+                            <li>Unreal Engine 5 (3D)</li>
+                            <li>PyGame (2D Engines)</li>
+                            <li>Blueprints Visual Scripting</li>
+                            <li>Scene & Level Architecture</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">02 / Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python (PyGame Engines)</li>
+                            <li>C++ (Object-Oriented)</li>
+                            <li>C (Memory & Low-Level Math)</li>
+                            <li>Java (Foundations)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">03 / Physics & Math</h3>
+                        <ul class="skill-list">
+                            <li>Parabolic Gravity & Kinematics</li>
+                            <li>AABB & Pixel Mask Collisions</li>
+                            <li>Sprite State Machines</li>
+                            <li>Vector Algebra & Trigonometry</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-name">04 / Jam & Teamwork</h3>
+                        <ul class="skill-list">
+                            <li>24-Hour Rapid Prototyping</li>
+                            <li>MIT Gaming Club Member</li>
+                            <li>Git / GitHub Versioning</li>
+                            <li>Audio Channel Mixing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE & ACADEMIC RECORD
+             ========================================================================== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2 class="section-title">Achievements & Education</h2>
+                        <p class="section-subtext">
+                            Competitive game jam wins and formal engineering background.
+                        </p>
+                    </div>
+                    <span class="section-index">[03]</span>
+                </div>
+
+                <div class="timeline-list">
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2026 &bull; Hackathon</span>
+                        <div>
+                            <h3 class="timeline-role">5th Place Winner &mdash; TechSolstice Game Jam</h3>
+                            <div class="timeline-org">MIT Bangalore Flagship Fest &bull; 24-hr Game Jam</div>
+                            <p class="timeline-desc">
+                                Engineered and submitted "God's Hand" within a strict 24-hour limit under the "One Screen" theme. Commended by judges for gameplay mechanics clarity and stability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2025 &mdash; 2029</span>
+                        <div>
+                            <h3 class="timeline-role">B.Tech in Computer Science & Engineering</h3>
+                            <div class="timeline-org">Manipal Institute of Technology (MIT), Bangalore</div>
+                            <p class="timeline-desc">
+                                <strong>1st Year CGPA: 9.81</strong>. Active contributor to the MIT Gaming Club. Mentoring junior students in game physics and collaborating on indie game prototypes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-period">2026 &bull; 2 Months</span>
+                        <div>
+                            <h3 class="timeline-role">GenAI & Agentic Systems Intern</h3>
+                            <div class="timeline-org">Zensar Technologies &bull; Summer Sprint</div>
+                            <p class="timeline-desc">
+                                Developed document intelligence pipelines and Model Context Protocol servers in Python, demonstrating software engineering rigor in a corporate setting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CONTACT & COLOPHON (STRICTLY AT THE END)
+             ========================================================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-inner">
+                <h2 class="contact-headline">
+                    Let's build <em>immersive games</em>.
+                </h2>
+                <p class="contact-copy">
+                    Seeking game development and graphics engineering internships where I can write performant code and build engaging systems. Get in touch directly:
+                </p>
+
+                <div class="contact-actions-row">
+                    <button class="btn-primary-action" onclick="copyEmail()">
+                        <i class="fa-regular fa-copy"></i> Copy Email: zoom2aarav@gmail.com
+                    </button>
+                    <a href="https://www.linkedin.com/in/aarav-mittal2007" target="_blank" rel="noopener noreferrer" class="btn-secondary-action">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Aarav-Mittal" target="_blank" rel="noopener noreferrer" class="btn-secondary-action">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+
+                <div class="colophon-footer">
+                    <span>&copy; 2026 Aarav Mittal &bull; MIT Bangalore</span>
+                    <span>Game Dev Portfolio &bull; Powered by PyGame & Unreal Engine 5</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GAMEPLAY SHOWCASE MODAL -->
+    <div id="ue5-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close-button" onclick="closeUE5Modal()" aria-label="Close modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <h3 id="modal-title" style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; padding-right: 2rem;">
+                Gameplay Showcase
+            </h3>
+            
+            <div style="background: var(--bg-subtle); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 1rem; text-align: center; margin-bottom: 1.25rem;">
+                <img id="modal-media" src="assets/desert_hunt_showcase.gif" alt="Gameplay Showcase Demo" class="modal-showcase-media">
+                <p id="modal-desc" style="font-size: 0.88rem; color: var(--text-secondary); max-width: 580px; margin: 0 auto; line-height: 1.5;">
+                    3D platforming gameplay mechanics, dynamic Lumen lighting, physics collisions, and collectible state management built with Unreal Engine Blueprints.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem;">
+                <span id="modal-note" style="color: var(--text-muted);">
+                    Contact Aarav for a compiled Windows playable build (.zip)
+                </span>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <a id="modal-demo-btn" href="assets/desert_hunt_showcase.gif" target="_blank" rel="noopener noreferrer" class="btn-secondary-action" style="font-size: 0.82rem; padding: 0.5rem 0.85rem;">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Demo
+                    </a>
+                    <a id="modal-repo-btn" href="https://github.com/Aarav-Mittal/Desert-Hunt.git" target="_blank" rel="noopener noreferrer" class="btn-primary-action" style="font-size: 0.82rem; padding: 0.5rem 1rem;">
+                        <i class="fa-brands fa-github"></i> View GitHub Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js?v=32"></script>
+</body>
+</html>
