@@ -102,12 +102,12 @@ KNOWLEDGE_BASE = {
         )
     },
     "gamedev": {
-        "user_query": "Tell me about Aarav's Unreal Engine & PyGame projects",
-        "rag_context": "Game Dev Portfolio: 'Desert Hunt' (Unreal Engine 5 3D Capstone), 'God's Hand' (TechSolstice 24hr Game Jam 5th Rank).",
+        "user_query": "Tell me about Aarav's Unreal Engine & Unity projects",
+        "rag_context": "Game Dev Portfolio: 'Desert Hunt' (Unreal Engine 5 3D Capstone), 'God's Hand' (TechSolstice 24hr Game Jam 5th Rank, Unity).",
         "mcp_tool": "mcp_server.get_game_projects({'author': 'Aarav Mittal'})",
         "response": (
             "Aarav is an avid game developer: He built 'Desert Hunt' (a 3D Unreal Engine 5 capstone with platforming gameplay and dynamic lighting) "
-            "and placed 5th in MIT Bangalore's TechSolstice 24-hour Game Jam with 'God's Hand'."
+            "and placed 5th in MIT Bangalore's TechSolstice 24-hour Game Jam with 'God's Hand' (built with Unity)."
         )
     }
 }
@@ -175,11 +175,11 @@ def execute_agent_query(req: AgentQueryRequest):
             "Aarav specializes in Model Context Protocol (MCP) server creation and LangChain/LangGraph agent workflows, "
             "enabling LLMs to safely call RPC tools and query vector databases."
         )
-    elif "game" in q_lower or "pygame" in q_lower or "unreal" in q_lower:
-        rag_info = "Game Dev Archives: Unreal Engine 5 Desert Hunt, TechSolstice 24hr Game Jam 5th Place Winner."
+    elif "game" in q_lower or "unity" in q_lower or "unreal" in q_lower or "pygame" in q_lower:
+        rag_info = "Game Dev Archives: Unreal Engine 5 Desert Hunt, Unity God's Hand (TechSolstice 24hr Game Jam 5th Place Winner)."
         resp_text = (
-            "Aarav develops games in Unreal Engine 5 and PyGame. He won 5th place at the TechSolstice 24hr Game Jam "
-            "with 'God's Hand' and built 'Desert Hunt' in Unreal Engine 5."
+            "Aarav develops games in Unreal Engine 5 and Unity. He won 5th place at the TechSolstice 24hr Game Jam "
+            "with 'God's Hand' (built with Unity) and built 'Desert Hunt' in Unreal Engine 5."
         )
     else:
         rag_info = "General Portfolio Knowledge Index: B.Tech CSE @ MIT Bangalore (9.81 CGPA), Ex-GenAI Intern @ Zensar."

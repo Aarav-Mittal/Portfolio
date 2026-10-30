@@ -228,7 +228,7 @@ const GAME_SHOWCASES = {
         title: '"God\'s Hand" — TechSolstice 24hr Game Jam Gameplay Showcase',
         imgSrc: 'assets/gods_hand_showcase.gif',
         imgAlt: 'God\'s Hand 24hr Game Jam Gameplay Demo',
-        desc: 'Engineered during a high-intensity 24-hour sprint at MIT Bangalore for the "One Screen" theme. Players balance weather miracles (Rain, Sun, Lightning) to sustain village population and faith without escalating fear.',
+        desc: 'Engineered with Unity (C#) during a high-intensity 24-hour sprint at MIT Bangalore for the "One Screen" theme. Players balance weather miracles (Rain, Sun, Lightning) to sustain village population and faith without escalating fear.',
         repoUrl: null,
         hasRepo: false,
         note: '🏆 5th Place Winner in University 24-hr Game Jam'
@@ -244,16 +244,34 @@ function openGameShowcase(gameKey) {
 
     const titleEl = document.getElementById('modal-title');
     const mediaEl = document.getElementById('modal-media');
+    const videoEl = document.getElementById('modal-video');
     const descEl = document.getElementById('modal-desc');
     const noteEl = document.getElementById('modal-note');
     const repoBtn = document.getElementById('modal-repo-btn');
     const demoBtn = document.getElementById('modal-demo-btn');
 
     if (titleEl) titleEl.innerText = data.title;
-    if (mediaEl) {
-        mediaEl.src = data.imgSrc;
-        mediaEl.alt = data.imgAlt;
+
+    const isVideo = data.imgSrc.endsWith('.mp4') || data.imgSrc.endsWith('.webm');
+    if (isVideo) {
+        if (mediaEl) mediaEl.style.display = 'none';
+        if (videoEl) {
+            videoEl.style.display = 'block';
+            videoEl.src = data.imgSrc;
+            videoEl.play().catch(() => {});
+        }
+    } else {
+        if (videoEl) {
+            videoEl.style.display = 'none';
+            videoEl.pause();
+        }
+        if (mediaEl) {
+            mediaEl.style.display = 'block';
+            mediaEl.src = data.imgSrc;
+            mediaEl.alt = data.imgAlt;
+        }
     }
+
     if (descEl) descEl.innerText = data.desc;
     if (noteEl) noteEl.innerHTML = data.note;
 
@@ -280,6 +298,10 @@ function openUE5Modal(title) {
 function closeUE5Modal() {
     const modal = document.getElementById('ue5-modal');
     if (modal) modal.classList.remove('active');
+    const videoEl = document.getElementById('modal-video');
+    if (videoEl) {
+        videoEl.pause();
+    }
 }
 
 function copyEmail() {
